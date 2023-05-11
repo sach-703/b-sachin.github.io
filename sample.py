@@ -1,7 +1,7 @@
 from mymodule import add
 
 print("Hello world")
-print("Imaginory error fixed")
+print("Changes added")
 
 print(add(2,3))
 
