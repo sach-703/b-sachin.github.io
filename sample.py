@@ -11,12 +11,16 @@ with open("greeting.txt", "r") as f:
 
 msg_file = open("greeting.txt","r")
 msg = msg_file.read()
+msg_file.close()
 
 nms = open("names.txt","r")
 lines = nms.readlines()
 
+msg_file = open("greeting.txt","a")
+
 for line in lines:
     print("{} {}".format(msg,line.strip()))
+    msg_file.write("{} {}".format(msg,line.strip()))
 
 msg_file.close()
 nms.close()
